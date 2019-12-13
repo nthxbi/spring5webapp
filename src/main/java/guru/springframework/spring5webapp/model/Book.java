@@ -28,6 +28,9 @@ public class Book {
         this.authors = authors;
     }
 
+    public Book() {
+    }
+
     public Book(String title, String isbn, Publisher publisher) {
         this.title = title;
         this.isbn = isbn;

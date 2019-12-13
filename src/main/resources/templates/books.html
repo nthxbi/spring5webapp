@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Spring Framework Guru</title>
 </head>
 <body>
@@ -16,9 +16,9 @@
     </tr>
 
     <tr th:each="book : ${books}">
-        <td th:text="${books.id}">123</td>
-        <td th:text="${books.title}">Book1</td>
-        <td th:text="${books.publisher.name}">Publisher1</td>
+        <td th:text="${book.id}">123</td>
+        <td th:text="${book.title}">Book1</td>
+        <td th:text="${book.publisher.name}">Publisher1</td>
     </tr>
 </table>
 </body>
