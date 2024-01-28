@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AuthorController {
     private AuthorRepository authorRepository;
 
-
     public AuthorController(AuthorRepository authorRepository){
         this.authorRepository = authorRepository;
     }
