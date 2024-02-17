@@ -17,7 +17,7 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    @RequestMapping("/books")
+   @RequestMapping("/books")
     public String getBooks(Model model){
         model.addAttribute("books", bookService.findAll()); //get a list of books from the database
 
